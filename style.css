@@ -12,6 +12,49 @@ body {
   display: block;
 }
 
+.greetings,
+.js-toDoForm,
+.js-toDoList,
+.js-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.js-toDoList {
+  flex-direction: column;
+  margin: 15px;
+}
+
+.js-clock {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.js-toDoForm input,
+.js-form input {
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid white;
+  text-align: start;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.js-toDoForm input[type="submit"],
+.js-form input[type="submit"] {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.js-toDoForm input::placeholder {
+  opacity: 0.9;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -24,9 +67,15 @@ body {
 .bgImage {
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+}
+
+.js-weather {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }

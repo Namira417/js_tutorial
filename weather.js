@@ -12,6 +12,7 @@ function getWeather(lat, lon) {
     .then(function (json) {
       const temperature = json.main.temp;
       const place = json.name;
+      //console.log(json)을 통해서 무슨 정보들이 있는지 확인해서 사용해보자!
       weather.innerText = `${temperature} @${place}`;
     });
   //data를 가져올때까지 기다리는것은 .then을 쓴다! 점을 조심!
